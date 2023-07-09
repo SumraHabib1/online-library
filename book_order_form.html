@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order form</title>
+    <link rel="stylesheet" href="form_styling.css">
+</head>
+<body>
+    <div class="d1">
+    <form action=""><!--in action server location is used where data is submitted-->
+             <h1 class="heading">ORDER BOOKS</h1>
+             <h2>customer information</h2>
+             <p>name: <input type="text" name="name" required placeholder="enter name"></p><!--name to send to server ,, always unique ,,, placeholder tells what to enter--> 
+             <fieldset> <!--for grouping-->
+                <legend>gender</legend> <!--group name-->
+             <p>  
+                male <input type="radio" name="gender" id="male">
+                female <input type="radio" name="gender" id="female">
+             </p>
+            </fieldset>
+            <fieldset>
+                <legend>select books</legend>
+              <p> operating system <input type="radio" name="book" id="book">  </p>
+              <p> computer graphics <input type="radio" name="book" id="book"></p>
+              <p> computer networks <input type="radio" name="book" id="book"></p>
+              <p> OOP<input type="radio" name="book" id="book"></p>
+             <p> software engineering <input type="radio"name="book" id="book"></p>
+
+              
+            </fieldset>
+            <p>address: <textarea name="address" id="address" cols="25" rows="4"></textarea></p>
+            <p>email: <input type="email" name="email" id="email"></p>
+            <p>phone no: <input type="tel" name="contact" id="contact"></p>
+
+            <h1>payment information</h1>
+            <p>payment  type</p>
+            <select name="payment type" id="payment type">
+                <option value="">--select payment type--</option>
+                <option value="easy paisa">easy paisa</option><!--value data go to server-->
+                <option value="credit card">credit card</option>
+            </select>
+            <p>cardno: <input type="number" name="card_no" id="card_no"></p>
+             <input type="submit" value="pay now">
+    </form> 
+</div> 
+</body>
+</html>
